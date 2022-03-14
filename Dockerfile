@@ -25,7 +25,7 @@ ENV PORT=8000
 EXPOSE 8000
 EXPOSE 2222 80
 
-ENTRYPOINT ["/opt/startup/init_container.sh"]   
+ENTRYPOINT ["/init_container.sh"]   
 
 # execute the command python main.py (in the WORKDIR) to start the app
 CMD ["python", "main.py"]
