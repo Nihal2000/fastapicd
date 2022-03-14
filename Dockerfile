@@ -23,9 +23,8 @@ RUN chmod 755 /init_container.sh
 # expose the port that uvicorn will run the app on
 ENV PORT=8000
 EXPOSE 8000
-EXPOSE 2222
 
 ENTRYPOINT ["/init_container.sh"]   
 
 # execute the command python main.py (in the WORKDIR) to start the app
-CMD ["python", "main.py"]
+#CMD ["python", "main.py"]
